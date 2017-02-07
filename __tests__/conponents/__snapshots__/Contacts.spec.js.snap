@@ -1,0 +1,98 @@
+exports[`<Contacts /> render() should render Contact list when isLoading is false 1`] = `
+<div
+  className="container">
+  <div
+    className="row">
+    <div
+      className="contacts">
+      <div>
+        <div
+          className="contacts__li contacts__li--active"
+          onClick={[Function]}>
+          <div
+            className="contacts__li-name">
+            Leanne Graham
+          </div>
+        </div>
+        <Contact
+          classes="contacts__namecard-panel contacts__namecard-panel--active"
+          contact={
+            Object {
+              "address": Object {
+                "city": "Gwenborough",
+                "geo": Object {
+                  "lat": "-37.3159",
+                  "lng": "81.1496",
+                },
+                "street": "Kulas Light",
+                "suite": "Apt. 556",
+                "zipcode": "92998-3874",
+              },
+              "company": Object {
+                "bs": "harness real-time e-markets",
+                "catchPhrase": "Multi-layered client-server neural-net",
+                "name": "Romaguera-Crona",
+              },
+              "email": "Sincere@april.biz",
+              "id": 1,
+              "name": "Leanne Graham",
+              "phone": "1-770-736-8031 x56442",
+              "username": "Bret",
+              "website": "hildegard.org",
+            }
+          } />
+      </div>
+      <div>
+        <div
+          className="contacts__li"
+          onClick={[Function]}>
+          <div
+            className="contacts__li-name">
+            Ervin Howell
+          </div>
+        </div>
+        <Contact
+          classes="contacts__namecard-panel"
+          contact={
+            Object {
+              "address": Object {
+                "city": "Wisokyburgh",
+                "geo": Object {
+                  "lat": "-43.9509",
+                  "lng": "-34.4618",
+                },
+                "street": "Victor Plains",
+                "suite": "Suite 879",
+                "zipcode": "90566-7771",
+              },
+              "company": Object {
+                "bs": "synergize scalable supply-chains",
+                "catchPhrase": "Proactive didactic contingency",
+                "name": "Deckow-Crist",
+              },
+              "email": "Shanna@melissa.tv",
+              "id": 2,
+              "name": "Ervin Howell",
+              "phone": "010-692-6593 x09125",
+              "username": "Antonette",
+              "website": "anastasia.net",
+            }
+          } />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Contacts /> render() should render Contact list when isLoading is true 1`] = `
+<div
+  className="container">
+  <div
+    className="row">
+    <div
+      className="preloader-container">
+      <Preloader />
+    </div>
+  </div>
+</div>
+`;

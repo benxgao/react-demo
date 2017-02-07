@@ -1,0 +1,54 @@
+exports[`<Contact /> render() should render Contact list when isLoading is false 1`] = `
+<div
+  className="contact css classnames">
+  <div
+    className="namecard">
+    <div
+      className="namecard__header">
+      <div
+        className="namecard__header-name">
+        Leanne Graham
+      </div>
+      <div
+        className="namecard__header-subtitle">
+        Romaguera-Crona
+      </div>
+    </div>
+    <div
+      className="namecard__body">
+      <div
+        className="namecard__body-wrapper">
+        <div
+          className="namecard__item namecard__item--head">
+          harness real-time e-markets
+        </div>
+        <div
+          className="namecard__item">
+          <b>
+            Phone:
+          </b>
+           
+          1-770-736-8031 x56442
+        </div>
+        <div
+          className="namecard__item">
+          <b>
+            E-mail:
+          </b>
+           
+          Sincere@april.biz
+        </div>
+        <div
+          className="namecard__item">
+          <b>
+            URL:
+          </b>
+           
+          hildegard.org
+           
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

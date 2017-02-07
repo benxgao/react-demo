@@ -1,0 +1,51 @@
+.contacts {
+  @extend .s12;
+  @extend .m12;
+  @extend .l12;
+
+  padding: $gutter;
+
+  &__li {
+    @extend .card;
+
+    margin: .1rem 0;
+    padding: $gutter;
+    overflow: hidden;
+    font-weight: bold;
+    font-size: 1.1rem;
+
+    &:hover {
+      background-color: $color-hover;
+      cursor: pointer;
+    }
+
+    &--active {
+      font-weight: normal;
+      color: $color-brand;
+    }
+  }
+
+  &__namecard-panel {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: opacity .3s ease;
+    opacity: 0;
+
+    &--active {
+      display: block;
+      opacity: 1;
+      height: auto;
+      padding: $gutter * 2;
+      background-color: color('grey', 'lighten-3');
+    }
+  }
+
+  @media #{$small-and-down} {
+    .contacts__namecard-panel {
+      &--active {
+        padding: 0;
+      }
+    }
+  }
+}

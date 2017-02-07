@@ -1,0 +1,14 @@
+.preloader-container {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.preloader {
+  margin: 0 auto;
+}
+
+.spinner-layer {
+  border-color: $color-brand;;
+}
