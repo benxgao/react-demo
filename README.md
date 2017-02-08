@@ -11,3 +11,7 @@ visit `localhost:8080`
 ## Testing
 
 run `npm test`
+
+## Building
+
+check `https://travis-ci.org/loql/react-demo`
