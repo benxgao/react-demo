@@ -2,3 +2,12 @@ language: node_js
 node_js:
   - "6"
 install: npm install
+
+before_deploy:
+  - npm run build
+
+deploy:
+  provider: surge
+  project: ./public/
+  domain: loql.surge.sh
+  skip_cleanup: true

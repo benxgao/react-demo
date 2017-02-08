@@ -5,7 +5,9 @@
 ## Get Started
 
 run `npm i` then
+
 run `npm start` then
+
 visit `localhost:8080`
 
 ## Testing
