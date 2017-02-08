@@ -17,6 +17,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: './src/index.hbs'
+    }),
+    new HtmlWebpackPlugin({
+      filename: '200.html', // For Surge.sh
+      template: './src/index.hbs'
     })
   ],
   resolve: {
