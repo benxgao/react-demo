@@ -2,58 +2,85 @@ const path = require('path');
 const autoprefixer = require('autoprefixer');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
   devtool: '#cheap-module-eval-source-map',
-  entry: [
-    './src/index',
-  ],
+  entry: './src/index',
   output: {
-    path: './public',
+    path: path.resolve(__dirname, 'public'),
     filename: 'static/bundle-[hash].js',
-    publicPath: '',
+    publicPath: ''
   },
   plugins: [
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      template: './src/index.hbs'
+      template: './src/index.html'
     }),
     new HtmlWebpackPlugin({
       filename: '200.html', // For Surge.sh
-      template: './src/index.hbs'
-    })
+      template: './src/index.html'
+    }),
+    new ExtractTextPlugin("style.css"),
   ],
   resolve: {
-    extensions: ['', '.js', '.jsx', '.scss'],
+    extensions: ['.js', '.json', '.jsx', '.scss'],
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.(js|jsx)$/,
-        loader: 'babel?cacheDirectory',
         exclude: /node_modules/,
+        loader: 'babel-loader',
+        options: {
+          cacheDirectory: true,
+          presets: [
+            'react',
+            ['es2015', { modules: false }]
+          ]
+        }
       },
       {
-        test: /\.hbs$/,
-        loader: 'handlebars-template'
-      },
-      {
-        test: /\.css$/,
-        loader: 'style-loader!css-loader',
+        test: /\.html/,
+        use: ['html-loader']
       },
       {
         test: /\.scss$/,
-        loader: 'style!css!postcss!resolve-url!sass?sourceMap',
+        use: ExtractTextPlugin.extract({
+          fallback: "style-loader",
+          use: [
+            {
+             loader: 'css-loader'
+            },
+            {
+             loader: 'postcss-loader',
+             options: {
+               plugins: function () {
+                 return [
+                   autoprefixer({
+                     browsers: ['last 3 versions']
+                   })
+                 ];
+               }
+             }
+            },
+            {
+             loader: 'resolve-url-loader'
+            },
+            {
+             loader: 'sass-loader',
+             options: {
+               sourceMap: true
+             }
+            }
+         ]
+        })
+
       },
       {
         test: /\.jpe?g$|\.gif$|\.png$|\.svg$|\.woff$|\.ttf$|\.eot$|\.woff2$/,
-        loader: 'file',
+        use: ['file-loader']
       },
     ],
-  },
-  postcss: [
-    autoprefixer({
-      browsers: ['last 3 versions'],
-    }),
-  ],
+  }
 };

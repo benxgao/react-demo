@@ -1,16 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
 exports[`<Contacts /> render() should render Contact list when isLoading is false 1`] = `
 <div
-  className="container">
+  className="container"
+>
   <div
-    className="row">
+    className="row"
+  >
     <div
-      className="contacts">
+      className="contacts"
+    >
       <div>
         <div
           className="contacts__li contacts__li--active"
-          onClick={[Function]}>
+          onClick={[Function]}
+        >
           <div
-            className="contacts__li-name">
+            className="contacts__li-name"
+          >
             Leanne Graham
           </div>
         </div>
@@ -40,14 +47,17 @@ exports[`<Contacts /> render() should render Contact list when isLoading is fals
               "username": "Bret",
               "website": "hildegard.org",
             }
-          } />
+          }
+        />
       </div>
       <div>
         <div
           className="contacts__li"
-          onClick={[Function]}>
+          onClick={[Function]}
+        >
           <div
-            className="contacts__li-name">
+            className="contacts__li-name"
+          >
             Ervin Howell
           </div>
         </div>
@@ -77,7 +87,8 @@ exports[`<Contacts /> render() should render Contact list when isLoading is fals
               "username": "Antonette",
               "website": "anastasia.net",
             }
-          } />
+          }
+        />
       </div>
     </div>
   </div>
@@ -86,11 +97,14 @@ exports[`<Contacts /> render() should render Contact list when isLoading is fals
 
 exports[`<Contacts /> render() should render Contact list when isLoading is true 1`] = `
 <div
-  className="container">
+  className="container"
+>
   <div
-    className="row">
+    className="row"
+  >
     <div
-      className="preloader-container">
+      className="preloader-container"
+    >
       <Preloader />
     </div>
   </div>

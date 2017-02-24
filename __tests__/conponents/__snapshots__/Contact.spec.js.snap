@@ -1,29 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
 exports[`<Contact /> render() should render Contact list when isLoading is false 1`] = `
 <div
-  className="contact css classnames">
+  className="contact css classnames"
+>
   <div
-    className="namecard">
+    className="namecard"
+  >
     <div
-      className="namecard__header">
+      className="namecard__header"
+    >
       <div
-        className="namecard__header-name">
+        className="namecard__header-name"
+      >
         Leanne Graham
       </div>
       <div
-        className="namecard__header-subtitle">
+        className="namecard__header-subtitle"
+      >
         Romaguera-Crona
       </div>
     </div>
     <div
-      className="namecard__body">
+      className="namecard__body"
+    >
       <div
-        className="namecard__body-wrapper">
+        className="namecard__body-wrapper"
+      >
         <div
-          className="namecard__item namecard__item--head">
+          className="namecard__item namecard__item--head"
+        >
           harness real-time e-markets
         </div>
         <div
-          className="namecard__item">
+          className="namecard__item"
+        >
           <b>
             Phone:
           </b>
@@ -31,7 +42,8 @@ exports[`<Contact /> render() should render Contact list when isLoading is false
           1-770-736-8031 x56442
         </div>
         <div
-          className="namecard__item">
+          className="namecard__item"
+        >
           <b>
             E-mail:
           </b>
@@ -39,7 +51,8 @@ exports[`<Contact /> render() should render Contact list when isLoading is false
           Sincere@april.biz
         </div>
         <div
-          className="namecard__item">
+          className="namecard__item"
+        >
           <b>
             URL:
           </b>
