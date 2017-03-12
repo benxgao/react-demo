@@ -8,7 +8,7 @@ const fetchRequest = (fetch, url, onSuccess) => fetch(url, {
 .then(response => response.json())
 .then(body => onSuccess(body))
 .catch((e) => {
-  console.error(e);
+  // console.error(e);
 });
 
 export function fetchContacts(fetch, url, dispatch, action) {
