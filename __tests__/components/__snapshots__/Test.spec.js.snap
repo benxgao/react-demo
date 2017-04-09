@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Test /> should show default text when inital load 1`] = `
+<div
+  className="test-class"
+  onClick={[Function]}
+>
+  hello
+</div>
+`;
+
+exports[`<Test /> should show diff text when it is clicked 1`] = `
+<div
+  className="test-class"
+  onClick={[Function]}
+>
+  mingxin
+</div>
+`;
