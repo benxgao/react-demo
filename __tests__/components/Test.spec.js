@@ -3,7 +3,7 @@ import { shallow } from 'enzyme';
 import { shallowToJson } from 'enzyme-to-json';
 import Test from '../../src/components/Test';
 
-describe('<Test />', () => {
+describe.skip('<Test />', () => {
   it('init state', () => {
     const wrapper = shallow(
       <Test />
