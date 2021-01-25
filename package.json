@@ -14,8 +14,8 @@
     "type": "git",
     "url": "git+https://github.com/loql/react-demo.git"
   },
-  "author": "Ben Gao",
-  "license": "ISC",
+  "author": "Ben X Gao",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/loql/react-demo/issues"
   },
